@@ -1,0 +1,20 @@
+.Facebook {
+  background-color: #4267b2;
+}
+.Twitter {
+  background-color: #1da1f2;
+}
+.Reddit {
+  background-color: #ff5700;
+}
+.Instagram {
+  background: linear-gradient(
+    45deg,
+    #405de6,
+    #5851db,
+    #833ab4,
+    #c13584,
+    #e1306c,
+    #fd1d1d
+  );
+}
