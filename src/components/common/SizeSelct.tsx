@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState } from "react";
+import { useForm } from "react-hook-form";
 import styled from "styled-components";
 import Select from "react-select";
 import makeAnimated from "react-select/animated";
@@ -7,7 +8,7 @@ import "./button.css";
 const animatedComponents = makeAnimated();
 
 interface ISizeProps {
-  name?: string;
+  imageCallback: Function;
 }
 
 const Overview = styled.div``;
@@ -28,17 +29,29 @@ const sizeOptions = [
   { value: "Example", label: "Example" },
 ];
 
-export default ({ name }: ISizeProps) => {
+export default ({ imageCallback }: ISizeProps) => {
+  const [selectedSizeOptions, setSelectedSizeOptions] = useState([]);
+  const { handleSubmit } = useForm();
+
+  const handleChange = (options: any) => {
+    setSelectedSizeOptions(options);
+  };
+
+  imageCallback(selectedSizeOptions);
+  const test = (event: any) => {};
   return (
     <Overview>
       <SizeSelectStyle>
         <Text>Pick your image size(s)</Text>
-        <Select
-          closeMenuOnSelect={false}
-          components={animatedComponents}
-          isMulti
-          options={sizeOptions}
-        />
+        <form onSubmit={handleSubmit(test)}>
+          <Select
+            closeMenuOnSelect={false}
+            components={animatedComponents}
+            isMulti
+            options={sizeOptions}
+            onChange={handleChange}
+          />
+        </form>
       </SizeSelectStyle>
     </Overview>
   );
