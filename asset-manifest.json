@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/marketing-Image-resizer/static/css/main.aa0024c4.chunk.css",
-    "main.js": "/marketing-Image-resizer/static/js/main.6097bcfb.chunk.js",
-    "main.js.map": "/marketing-Image-resizer/static/js/main.6097bcfb.chunk.js.map",
+    "main.js": "/marketing-Image-resizer/static/js/main.9c8b9838.chunk.js",
+    "main.js.map": "/marketing-Image-resizer/static/js/main.9c8b9838.chunk.js.map",
     "runtime-main.js": "/marketing-Image-resizer/static/js/runtime-main.2b8db07c.js",
     "runtime-main.js.map": "/marketing-Image-resizer/static/js/runtime-main.2b8db07c.js.map",
     "static/js/2.1a205472.chunk.js": "/marketing-Image-resizer/static/js/2.1a205472.chunk.js",
     "static/js/2.1a205472.chunk.js.map": "/marketing-Image-resizer/static/js/2.1a205472.chunk.js.map",
     "index.html": "/marketing-Image-resizer/index.html",
-    "precache-manifest.ce8f3bee6c13a5078e33b8d10d035842.js": "/marketing-Image-resizer/precache-manifest.ce8f3bee6c13a5078e33b8d10d035842.js",
+    "precache-manifest.8582d723343a3f3abba707e3f0e7c987.js": "/marketing-Image-resizer/precache-manifest.8582d723343a3f3abba707e3f0e7c987.js",
     "service-worker.js": "/marketing-Image-resizer/service-worker.js",
     "static/css/main.aa0024c4.chunk.css.map": "/marketing-Image-resizer/static/css/main.aa0024c4.chunk.css.map",
     "static/js/2.1a205472.chunk.js.LICENSE.txt": "/marketing-Image-resizer/static/js/2.1a205472.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.2b8db07c.js",
     "static/js/2.1a205472.chunk.js",
     "static/css/main.aa0024c4.chunk.css",
-    "static/js/main.6097bcfb.chunk.js"
+    "static/js/main.9c8b9838.chunk.js"
   ]
 }

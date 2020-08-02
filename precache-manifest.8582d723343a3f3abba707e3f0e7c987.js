@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "36fc496631acaf6e51253e5389e376f1",
+    "revision": "e3e9e84c79c795e9312d01e1481c3d51",
     "url": "/marketing-Image-resizer/index.html"
   },
   {
-    "revision": "aaab4f8be902106052a6",
+    "revision": "0a6703a52b72a7d8a89c",
     "url": "/marketing-Image-resizer/static/css/main.aa0024c4.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/marketing-Image-resizer/static/js/2.1a205472.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "aaab4f8be902106052a6",
-    "url": "/marketing-Image-resizer/static/js/main.6097bcfb.chunk.js"
+    "revision": "0a6703a52b72a7d8a89c",
+    "url": "/marketing-Image-resizer/static/js/main.9c8b9838.chunk.js"
   },
   {
     "revision": "3300bdd03c55dca2ace5",
