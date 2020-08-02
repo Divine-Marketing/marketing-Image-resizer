@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 import Resizer from "react-image-file-resizer";
 
@@ -13,6 +13,7 @@ const facebookSizes: { [key: string]: any } = {
 const Overview = styled.div`
   padding-bottom: 20px;
 `;
+const Img = styled.img``;
 interface IImageProps {
   companyData: any;
   imageSizeData: any;
@@ -21,6 +22,7 @@ interface IImageProps {
 
 export default ({ companyData, file, imageSizeData }: IImageProps) => {
   const [im, setIm] = useState([]);
+  const imageArray: Array<any> = [];
   function createImage(event: string, company: string) {
     let selectedWidth = facebookSizes[company][event].width;
     let selectedHeight = facebookSizes[company][event].height;
@@ -48,14 +50,18 @@ export default ({ companyData, file, imageSizeData }: IImageProps) => {
     );
   }
 
-  for (const { value: company } of companyData) {
-    for (const { value: imageType } of imageSizeData) {
-      console.log(createImage(imageType, company));
-      const [width, height] = createImage(imageType, company);
-      sizeImage(imageType, file, height, width);
-      console.log(im);
+  if (companyData != null) {
+    if (imageSizeData != null) {
+      for (const { value: company } of companyData) {
+        for (const { value: imageType } of imageSizeData) {
+          console.log(createImage(imageType, company));
+          const [width, height] = createImage(imageType, company);
+          sizeImage(imageType, file, height, width);
+          imageArray.push(im);
+        }
+      }
     }
   }
-
-  return <Overview></Overview>;
+  const imageList = imageArray.map((image) => <Img src={image} />);
+  return <Overview>{imageList}</Overview>;
 };
