@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/marketing-Image-resizer/precache-manifest.d6ba445d4b832e2b90acc3477cd0fae1.js"
+  "/marketing-Image-resizer/precache-manifest.ce8f3bee6c13a5078e33b8d10d035842.js"
 );
 
 self.addEventListener('message', (event) => {
