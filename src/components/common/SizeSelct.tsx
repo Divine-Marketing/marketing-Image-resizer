@@ -23,10 +23,9 @@ const Text = styled.div`
   padding-bottom: 10px;
 `;
 const sizeOptions = [
-  { value: "Profile", label: "Profile" },
-  { value: "Post", label: "Post" },
-  { value: "Blog", label: "Blog" },
-  { value: "Example", label: "Example" },
+  { value: "EventImage", label: "Event Image" },
+  { value: "ProfilePhoto", label: "Profile Photo" },
+  { value: "CoverPhoto", label: "CoverPhoto" },
 ];
 
 export default ({ imageCallback }: ISizeProps) => {
