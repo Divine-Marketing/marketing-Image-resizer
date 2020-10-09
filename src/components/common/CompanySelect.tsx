@@ -24,6 +24,7 @@ const Text = styled.div`
   padding-bottom: 10px;
 `;
 const options = [
+
   { value: "facebook", label: "Facebook" },
   { value: "Twitter", label: "Twitter" },
   { value: "Reddit", label: "Reddit" },

@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 import Resizer from "react-image-file-resizer";
@@ -64,4 +65,3 @@ export default ({ companyData, file, imageSizeData }: IImageProps) => {
   }
   const imageList = imageArray.map((image) => <Img src={image} />);
   return <Overview>{imageList}</Overview>;
-};
