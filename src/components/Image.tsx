@@ -13,6 +13,11 @@ const facebookSizes: { [key: string]: any } = {
 const Overview = styled.div`
 	padding-bottom: 20px;
 `;
+
+const Text = styled.div`
+	font-size: 20px;
+`;
+
 const Img = styled.img``;
 interface IImageProps {
 	companyData: any;
