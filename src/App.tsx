@@ -32,6 +32,7 @@ function App() {
   const fileCallback = (data: any) => {
     setFileData(data);
   };
+
   return (
     <div>
       <Header />
