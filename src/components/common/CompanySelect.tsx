@@ -24,7 +24,8 @@ const Text = styled.div`
   padding-bottom: 10px;
 `;
 const options = [
-  { value: "Facebook", label: "Facebook" },
+
+  { value: "facebook", label: "Facebook" },
   { value: "Twitter", label: "Twitter" },
   { value: "Reddit", label: "Reddit" },
   { value: "Instagram", label: "Instagram" },
@@ -57,3 +58,10 @@ export default ({ companyCallback }: ICompanyProps) => {
     </Overview>
   );
 };
+
+// for (const {
+//   type: type,
+//   size: { width: width, height: height },
+// } of facebookSizes) {
+
+// }

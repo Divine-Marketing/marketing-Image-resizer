@@ -1,4 +1,5 @@
 {
+  "homepage": "http://Divine-Marketing.github.io/marketing-Image-resizer",
   "name": "divine_image_sizer",
   "version": "0.1.0",
   "private": true,
@@ -9,6 +10,7 @@
     "@types/jest": "^24.0.0",
     "@types/node": "^12.0.0",
     "@types/styled-components": "^5.1.1",
+    "gh-pages": "^3.1.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-hook-form": "^6.2.0",
@@ -23,7 +25,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -43,6 +47,7 @@
   "devDependencies": {
     "@types/react": "^16.9.43",
     "@types/react-dom": "^16.9.8",
-    "@types/react-select": "^3.0.14"
+    "@types/react-select": "^3.0.14",
+    "react-image-resizer": "^1.3.0"
   }
 }

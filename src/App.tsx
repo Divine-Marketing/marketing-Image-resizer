@@ -1,10 +1,14 @@
-import React, { useState, useEffect } from "react";
+
+import React, { useState } from "react";
 import "./App.css";
 
 import Header from "./components/header";
 import CompanySelect from "./components/common/CompanySelect";
 import SizeSelect from "./components/common/SizeSelct";
 import ImageThings from "./components/Image";
+
+import Upload from "./components/Upload";
+
 // import Button from "./components/common/Button";
 import styled from "styled-components";
 
@@ -21,6 +25,9 @@ function App() {
   const [companyData, setCompanyData] = useState([]);
   const [imageSizeData, setImageSizeData] = useState([]);
 
+  const [fileData, setFileData] = useState([]);
+
+
   const companyDataCallback = (data: any) => {
     setCompanyData(data);
   };
@@ -28,15 +35,28 @@ function App() {
     setImageSizeData(data);
   };
 
+  const fileCallback = (data: any) => {
+    setFileData(data);
+  };
+
+
   return (
     <div>
       <Header />
 
       <Center>
         <Layout>
+
+          <Upload fileCallback={fileCallback} />
           <CompanySelect companyCallback={companyDataCallback} />
           <SizeSelect imageCallback={imageDataCallback} />
           <ImageThings
+            file={fileData}
+
+          <CompanySelect companyCallback={companyDataCallback} />
+          <SizeSelect imageCallback={imageDataCallback} />
+          <ImageThings
+
             companyData={companyData}
             imageSizeData={imageSizeData}
           />
